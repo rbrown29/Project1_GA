@@ -29,12 +29,19 @@ console.log("here");
                 console.log("") 
             }
         );
-
-
-   //});
-
-
-
-        
+       $( function() {
+          $( "#dialog" ).dialog({
+             autoOpen: false,
+             show: {
+             effect: "size",
+             duration: 1000
+          }
+       });
+ 
+      $( "#opener" ).on( "click", function() {
+        $("#dialog").dialog( "option", "width", 600);
+        $( "#dialog" ).dialog( "open" );
+      });
+   }); 
     
 });

@@ -28,6 +28,7 @@ dl {
 	border: 3px solid saddlebrown;
 	border-radius: 8px;
 	opacity: 0.5;
+	background-color: saddlebrown;
 }
 dl:hover {
 	opacity: 1;
@@ -59,4 +60,30 @@ dd {
 	float: right;
 	margin-right:2em;
 }
-	
+#dialog {
+	position: absolute;
+	top:25px;
+	background-color: saddlebrown;
+	opacity: 0.6;
+	overflow-y: scroll;
+}
+#dialog:hover {
+	opacity: 1;
+}
+.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    display: all;
+    border-radius: 8px;
+    background-color: saddlebrown;
+    color: yellow;
+    border-color: saddlebrown;
+}
+p {
+	color: yellow;
+	text-align: left;
+}
+#opener {
+	border-radius: 8px;
+    background-color: saddlebrown;
+    color: yellow;
+    border-color: saddlebrown;
+}
