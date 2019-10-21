@@ -1,4 +1,5 @@
 console.log("this Works!");
+const emails = [];
 $(() => {
 console.log("here");
 
@@ -43,5 +44,14 @@ console.log("here");
         $( "#dialog" ).dialog( "open" );
       });
    }); 
-    
+      
+      $("form").on("submit", (event) => {
+        event.preventDefault();
+        const userInput = $('input[type="text"]').val();
+        
+        emails.unshift(userInput);
+        alert("You are now regestered to recieve emails!");
+        console.log(emails);
+        $("input").trigger("reset");
+      });
 });

@@ -19,6 +19,8 @@ header:hover {
 }
 h1 {
 	text-align: center;
+	font-style: oblique;
+	font-family: serif;
 }
 
 dl {
@@ -53,12 +55,14 @@ dd {
 .dlTwo {
 	width:300px;
 	float: right;
-	margin-right:2em;
 }
 .dlThree {
 	width:300px;
+	float: left;
+}
+.dlfour {
+	width:300px;
 	float: right;
-	margin-right:2em;
 }
 #dialog {
 	position: absolute;
@@ -80,10 +84,34 @@ dd {
 p {
 	color: yellow;
 	text-align: left;
+	font-style: oblique;
+	font-family: serif;
 }
 #opener {
 	border-radius: 8px;
     background-color: saddlebrown;
     color: yellow;
     border-color: saddlebrown;
+}
+.input1 {
+	border-radius: 8px;
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+.button1 {
+	border-radius: 8px;
+    background-color: saddlebrown;
+    color: yellow;
+    border-color: saddlebrown;
+}
+::placeholder {
+   color: yellow;
+}
+input[type=text] {
+	color: yellow;
+}
+form {
+	position: relative;
+	left: 600px;
+	top: 2px;
 }
