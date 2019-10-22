@@ -66,20 +66,19 @@ dd {
 }
 #dialog {
 	position: absolute;
-	top:25px;
+	top:100px;
 	background-color: saddlebrown;
 	opacity: 0.6;
 	overflow-y: scroll;
-}
-#dialog:hover {
-	opacity: 1;
-}
-.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
-    display: all;
-    border-radius: 8px;
+	visibility: hidden;
+	border-radius: 8px;
     background-color: saddlebrown;
     color: yellow;
     border-color: saddlebrown;
+    margin: 200px;
+}
+#dialog:hover {
+	opacity: 1;
 }
 p {
 	color: yellow;
@@ -116,4 +115,10 @@ form {
 	position: relative;
 	left: 600px;
 	top: 2px;
+}
+.close {
+	border-radius: 8px;
+    background-color: saddlebrown;
+    color: yellow;
+    border-color: saddlebrown;
 }

@@ -29,20 +29,17 @@ $(() => {
                 console.log("");
             }
         );
-       $( function()  {
-          $( "#dialog" ).dialog({
-             autoOpen: false,
-             show: {
-             effect: "size",
-             duration: 1000
-          }
+
+       $("#open").on("click", (event) => {
+         $("#dialog").css("visibility", "visible");
+         $("dl").css("visibility", "hidden");
        });
- 
-        $( "#open" ).on( "click", function() {
-        $("#dialog").dialog( "option", "width", 600);
-        $( "#dialog" ).dialog( "open" );
-      });
-   }); 
+
+       $(".close").on("click", (event) => {
+         $("#dialog").css("visibility", "hidden");
+         $("dl").css("visibility", "visible");
+       });
+    
       
       $("form").on("submit", (event) => {
         event.preventDefault();
