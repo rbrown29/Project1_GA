@@ -29,7 +29,7 @@ $(() => {
                 console.log("");
             }
         );
-       $( function() {
+       $( function()  {
           $( "#dialog" ).dialog({
              autoOpen: false,
              show: {
@@ -38,7 +38,7 @@ $(() => {
           }
        });
  
-      $( "#opener" ).on( "click", function() {
+        $( "#open" ).on( "click", function() {
         $("#dialog").dialog( "option", "width", 600);
         $( "#dialog" ).dialog( "open" );
       });
