@@ -1,7 +1,6 @@
 console.log("this Works!");
 const emails = [];
 $(() => {
-console.log("here");
 
         $.ajax({
             url: "https://newsapi.org/v2/everything?q=bitcoin&apiKey=fed0a49b182549368f00fc7862d755e7"
@@ -27,7 +26,7 @@ console.log("here");
               $('#webpage3').html(data.articles[3].url);
             },
             ()=>{
-                console.log("") 
+                console.log("");
             }
         );
        $( function() {
@@ -52,6 +51,6 @@ console.log("here");
         emails.unshift(userInput);
         alert("You are now regestered to recieve emails!");
         console.log(emails);
-        $("input").trigger("reset");
+        $("form").trigger("reset");
       });
 });
