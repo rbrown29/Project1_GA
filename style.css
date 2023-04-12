@@ -1,36 +1,114 @@
 body {
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
     height: 100%;
     z-index: -1;
+	background-size: cover;
+	background-color: rgb(30,34,39);
+    background-image: url("https://www.transparenttextures.com/patterns/stacked-circles.png");
+   
 }
 header {
-	background-color: gold;
+	background-color: rgb(63, 65, 68);
 	opacity: 0.6;
-	height: 80px;
-	width: 900px;
-    border: 3px solid saddlebrown;
+    border: 3px solid rgb(30,34,39);
     border-radius: 8px;
+    background-repeat: no-repeat;
+	background-position: cover;
+    height: 150px;
+    display: block;
 }
 header:hover {
 	opacity: 1;
 }
+
+footer {
+    background-color: rgb(63, 65, 68);
+    opacity: 0.6;
+    border: 3px solid rgb(30, 34, 39);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 150px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 20px); /* Adjust the width */
+    box-sizing: border-box;
+}
+
+footer:hover {
+	opacity: 1;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.div1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 8em;
+}
+
+nav {
+    font-weight: bold;
+    padding: 1em;
+    float: left;
+    width: 160px;
+    display: block;
+    border: 3px solid rgb(30,34,39);
+    height: 25em;
+    background-color: rgb(63, 65, 68);
+    opacity: .6;
+}
+
+nav:hover {
+	opacity: 1;
+}
+
 h1 {
 	text-align: center;
 	font-style: oblique;
 	font-family: serif;
+	color: white;
+}
+h3 {
+	text-align: center;
+	font-style: oblique;
+	font-family: serif;
+	color: white;
 }
 
 dl {
-	width:300px;
-	float:left;
+	width:400px;
 	margin-right:2em;
-	border: 3px solid saddlebrown;
+	border: 3px solid rgb(30,34,39);
 	border-radius: 8px;
 	opacity: 0.5;
-	background-color: saddlebrown;
+	background-color: rgb(63, 65, 68);
+	display: flex;
+	flex-direction: column;
+	padding-top: 2em;
+	padding-right: 2em;
 }
 dl:hover {
 	opacity: 1;
@@ -40,88 +118,154 @@ dt {
     font-weight:bold;
 	font-size:0.9em;
 	margin-bottom:0.7em;
-	color: royalblue;
-
+	color: white;
+	padding-left: 3.5em;
 }
 	
 dd {
-	color: yellow;
+	color: white;
 	font-size:0.7em;
 	margin:0 0 2em 0;
-	padding-left:4.5em;
+	padding-left: 2.5em;
 	line-height:1.5em;
 	background:none no-repeat left top;	
 }
-.dlTwo {
-	width:300px;
-	float: right;
-}
-.dlThree {
-	width:300px;
-	float: right;
-}
-.dlfour {
-	width:300px;
-	float: left;
-}
+
 #dialog {
 	position: absolute;
 	top:100px;
-	background-color: saddlebrown;
-	opacity: 0.6;
+	background-color: rgb(63, 65, 68);
+	opacity: 1;
 	overflow-y: scroll;
 	visibility: hidden;
 	border-radius: 8px;
-    background-color: saddlebrown;
-    color: yellow;
-    border-color: saddlebrown;
+    color: white;
+    border-color: rgb(30,34,39);
     margin: 200px;
+	height: 100px;
 }
-#dialog:hover {
-	opacity: 1;
-}
+
 p {
-	color: yellow;
+	color: white;
 	text-align: left;
 	font-style: oblique;
 	font-family: serif;
 }
 #open {
-	border-radius: 8px;
-    background-color: saddlebrown;
-    color: yellow;
-    border-color: saddlebrown;
-    position: absolute;
-    right: 350px;
-    top: 97px;
+	border-radius: 2px;
+	background-color: rgb(63, 65, 68);
+    color: white;
+	position: relative;
+	margin-left: 475px;
 }
-.input1 {
+#open1 {
+	border-radius: 2px;
+	background-color: rgb(63, 65, 68);
+    color: white;
+}
+#open2 {
+	border-radius: 2px;
+	background-color: rgb(63, 65, 68);
+	color: white;
+}
+#dialog1 {
+	background-color: rgb(63, 65, 68);
+	color: white;
+	border-color: rgb(30,34,39);
+	margin: 100px;
+	visibility: hidden;
+	width: 450px;
+	height: 150px;
 	border-radius: 8px;
-    background-color: saddlebrown;
-    border-color: saddlebrown;
+	margin-left: 400px;
+}
+
+.input1 {
+    background-color: rgb(30,34,39);
+    border-color: rgb(30,34,39);
+	color: white;
+	margin-left: 60px;
+	margin-top: 20px;
+	left: 25px;
+	width: 300px;
+	page-break-after: always;
+
 }
 .button1 {
-	border-radius: 8px;
-    background-color: saddlebrown;
-    color: yellow;
-    border-color: saddlebrown;
+    background-color: rgb(30,34,39);
+    border-color: rgb(30,34,39);
+	color: white;
+	margin-left: 140px;
+	left: 25px;
+	width: 150px;
+	page-break-after: always;
 }
 ::placeholder {
-   color: yellow;
+   color: white;
    text-align: center;
 }
 input[type=text] {
-	color: yellow;
+	color: white;
 
-}
-form {
-	position: relative;
-	left: 600px;
-	top: 2px;
-}
+} 
 .close {
-	border-radius: 8px;
-    background-color: saddlebrown;
-    color: yellow;
-    border-color: saddlebrown;
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close1 {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.div1 {
+	  flex-direction: column;
+	  padding-left: 1em;
+	}
+  
+	dl {
+	  width: 100%;
+	  margin-right: 0;
+	}
+  
+	footer {
+	  position: static;
+	  width: 100%;
+	}
+  
+	#dialog1 {
+	  width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	#open, #open1, #open2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	  }
+  }
+
+  
+  
+  
+  
+  
+  

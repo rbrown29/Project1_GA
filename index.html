@@ -1,70 +1,44 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Crypto News</title>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-	<script type="text/javascript" src="app.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<title>Bitcoin Prices</title>
 </head>
-<body background="pics/bitcoin three.jpg">
-	<header>
-		<h1>BITCOIN AND CRYPTO NEWS</h1>
-	</header>
-	<form>
-	<input  class="input1"type="text" placeholder="Email"/> 
-	<button class="button1">Submit Email</button>
-	</form>
-	<button id="open">Bitcoin History</button>
-		<div id="dialog">
-			<button class="close">Close</button>
-			<!-- Source: https://en.wikipedia.org/wiki/Bitcoin#History -->
-			<p>The domain name "bitcoin.org" was registered on 18 August 2008. On 31 October 2008, a link to a paper authored by Satoshi Nakamoto titled Bitcoin: A Peer-to-Peer Electronic Cash System was posted to a cryptography mailing list. Nakamoto implemented the bitcoin software as open-source code and released it in January 2009. Nakamoto's identity remains unknown.</p>
-        </div>
-    <dl class="dlOne">
-		<dt>Author:</dt>
-		<dd id="Author"></dd>
-		<dt>Description:</dt>
-	    <dd id="description"></dd>
-        <dt>Title:</dt>
-	    <dd id="title"></dd>
-	    <dt>Webpage</dt>
-	    <dd id="webpage"></dd>
+<nav>
+          <img
+            src="https://365webresources.com/wp-content/uploads/2022/03/80-Crypto-Logos.png"
+            alt=""
+          />
+          <h1>Crypto prices</h1>
+        </nav>
+<body>
+<div class="div2">
+	<div class="div1">
+        <table id="api" class="styled-table">
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>Currency</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row" w3-repeat="data">
+                    <td>{{baseId}}</td>
+                    <td>{{priceUsd}}</td>
+                    <td>{{quoteSymbol}}</td>
+                    <td>{{baseSymbol}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
 
-	</dl>
-	<dl class="dlTwo">
-		<dt>Author:</dt>
-		<dd id="Author1"></dd>
-		<dt>Description:</dt>
-	    <dd id="description1"></dd>
-        <dt>Title:</dt>
-	    <dd id="title1"></dd>
-	    <dt>Webpage:</dt>
-	    <dd id="webpage1"></dd>
-	</dl>
-	<dl class="dlThree">
-		<dt>Author:</dt>
-		<dd id="Author2"></dd>
-		<dt>Description:</dt>
-	    <dd id="description2"></dd>
-        <dt>Title:</dt>
-	    <dd id="title2"></dd>
-	    <dt>Webpage:</dt>
-	    <dd id="webpage2"></dd>
-	</dl>
-	<dl class="dlfour">
-		<dt>Author:</dt>
-		<dd id="Author3"></dd>
-		<dt>Description:</dt>
-	    <dd id="description3"></dd>
-        <dt>Title:</dt>
-	    <dd id="title3"></dd>
-	    <dt>Webpage:</dt>
-	    <dd id="webpage3"></dd>
-	</dl>
-	
 </body>
 </html>
