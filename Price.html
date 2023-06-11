@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<title>Bitcoin Prices</title>
+</head>
+<nav>
+          <img
+            src="https://365webresources.com/wp-content/uploads/2022/03/80-Crypto-Logos.png"
+            alt=""
+          />
+          <h1>Crypto prices</h1>
+        </nav>
+<body>
+<div class="div2">
+	<div class="div1">
+        <table id="api" class="styled-table">
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Price</th>
+                    <th>Currency</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row" w3-repeat="data">
+                    <td>{{baseId}}</td>
+                    <td>{{priceUsd}}</td>
+                    <td>{{quoteSymbol}}</td>
+                    <td>{{baseSymbol}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</body>
+</html>
